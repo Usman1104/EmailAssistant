@@ -6,8 +6,8 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Aicall Assistant"/>
   <Description DefaultValue="A template to get started."/>
-  <IconUrl DefaultValue="https://www.contoso.com/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://www.contoso.com/assets/icon-128.png"/>
+  <IconUrl DefaultValue="https://usman1104.github.io/EmailAssistant/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://usman1104.github.io/EmailAssistant/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
     <AppDomain>https://www.contoso.com</AppDomain>
@@ -23,7 +23,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://www.contoso.com/taskpane.html"/>
+        <SourceLocation DefaultValue="https://usman1104.github.io/EmailAssistant/taskpane.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -60,6 +60,8 @@
                     </Icon>
                     <Action xsi:type="ShowTaskpane">
                       <SourceLocation resid="Taskpane.Url"/>
+                                            				      <SupportsPinning>true</SupportsPinning>
+
                     </Action>
                   </Control>
                  
@@ -71,13 +73,13 @@
       </Hosts>
       <Resources>
         <bt:Images>
-          <bt:Image id="Icon.16x16" DefaultValue="https://www.contoso.com/assets/icon-16.png"/>
-          <bt:Image id="Icon.32x32" DefaultValue="https://www.contoso.com/assets/icon-32.png"/>
-          <bt:Image id="Icon.80x80" DefaultValue="https://www.contoso.com/assets/icon-80.png"/>
+          <bt:Image id="Icon.16x16" DefaultValue="https://usman1104.github.io/EmailAssistant/assets/icon-16.png"/>
+          <bt:Image id="Icon.32x32" DefaultValue="https://usman1104.github.io/EmailAssistant/assets/icon-32.png"/>
+          <bt:Image id="Icon.80x80" DefaultValue="https://usman1104.github.io/EmailAssistant/assets/icon-80.png"/>
         </bt:Images>
         <bt:Urls>
-          <bt:Url id="Commands.Url" DefaultValue="https://www.contoso.com/commands.html"/>
-          <bt:Url id="Taskpane.Url" DefaultValue="https://www.contoso.com/taskpane.html"/>
+          <bt:Url id="Commands.Url" DefaultValue="https://usman1104.github.io/EmailAssistant/commands.html"/>
+          <bt:Url id="Taskpane.Url" DefaultValue="https://usman1104.github.io/EmailAssistant/taskpane.html"/>
         </bt:Urls>
         <bt:ShortStrings>
           <bt:String id="GroupLabel" DefaultValue="Aicall Assistant"/>
