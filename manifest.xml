@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" xsi:type="MailApp">
-  <Id>81dc7904-e693-481e-b593-875eb8b71865</Id>
+  <Id>c012ca7c-0bdc-4a1f-b633-b48bc08b403e</Id>
   <Version>1.0.0.0</Version>
   <ProviderName>Contoso</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="Aicall Assistant"/>
+  <DisplayName DefaultValue="Search and Save"/>
   <Description DefaultValue="A template to get started."/>
   <IconUrl DefaultValue="https://www.contoso.com/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://www.contoso.com/assets/icon-128.png"/>
@@ -33,7 +33,6 @@
     <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read"/>
   </Rule>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides" xsi:type="VersionOverridesV1_0">
-    <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.1" xsi:type="VersionOverridesV1_1">
       <Requirements>
         <bt:Sets DefaultMinVersion="1.3">
           <bt:Set Name="Mailbox"/>
@@ -43,7 +42,7 @@
         <Host xsi:type="MailHost">
           <DesktopFormFactor>
             <FunctionFile resid="Commands.Url"/>
-            <ExtensionPoint xsi:type="MessageComposeCommandSurface">
+            <ExtensionPoint xsi:type="MessageReadCommandSurface">
               <OfficeTab id="TabDefault">
                 <Group id="msgComposeGroup">
                   <Label resid="GroupLabel"/>
@@ -80,14 +79,12 @@
           <bt:Url id="Taskpane.Url" DefaultValue="https://www.contoso.com/taskpane.html"/>
         </bt:Urls>
         <bt:ShortStrings>
-          <bt:String id="GroupLabel" DefaultValue="Aicall Assistant"/>
-          <bt:String id="TaskpaneButton.Label" DefaultValue="Aicall Assistant"/>
+          <bt:String id="GroupLabel" DefaultValue="Search and Save"/>
+          <bt:String id="TaskpaneButton.Label" DefaultValue="Search and Save"/>
         </bt:ShortStrings>
         <bt:LongStrings>
           <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Opens a Task Pane that enables users to insert text."/>
-          <bt:String id="ActionButton.Tooltip" DefaultValue="Perform an action when clicked."/>
         </bt:LongStrings>
       </Resources>
-    </VersionOverrides>
   </VersionOverrides>
 </OfficeApp>
